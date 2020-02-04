@@ -8,6 +8,9 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
 
 yum -y install mongodb-org
+
 firewall-cmd --permanent --add-port=27017/tcp
+
 systemctl start mongod
+
 systemctl enable mongod
